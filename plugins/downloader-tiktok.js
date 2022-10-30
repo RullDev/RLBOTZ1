@@ -22,9 +22,9 @@ if (!args[0]) throw `Use example ${usedPrefix}${command} https://www.tiktok.com/
                  █▄──▀▀▀──▄█████
                  ███▄▄▄▄▄███████
 ────────── ⇆ㅤ◁ㅤ ❚❚ㅤ ▷ㅤ↻ ──────────
-*Nickname:* ${nickname}
-*Description:* ${description}
-_©WH-MODS-BOT-V1🍭_
+*Pembuat Video:* ${nickname}
+*Deskripsi:* ${description}
+𝙍𝙪𝙡𝙡𝘽𝙊𝙏
 `.trim(), m)
 }
 catch {
@@ -59,10 +59,10 @@ let p = await tiktok(args[0])
                  █▄──▀▀▀──▄█████
                  ███▄▄▄▄▄███████
 ────────── ⇆ㅤ◁ㅤ ❚❚ㅤ ▷ㅤ↻ ──────────
-*Nickname:* ${p.dev}
-*Description:* ${p.description}
+*Nama Pembuat:* ${p.dev}
+*Deskripsi:* ${p.description}
 *Url:* ${p.url}
-_©WH-MODS-BOT-V1🍭_
+𝙍𝙪𝙡𝙡𝘽𝙊𝙏
 `.trim()
 conn.send2ButtonVid(m.chat, p.link, cap, author, `Donasi`, `.donasi`, `Audio`, `.tta ${args[0]}`, fakes, adReply)
 } catch (e) {
@@ -93,7 +93,7 @@ Ketik ulang *${usedPrefix + command}* teks anda untuk mengubah teks lagi
 🚀 : Makanya bantu donasi buat support + beli apikey unlimited bjir :v
 
 Donasi :
-Nomor Developer : wa.me/6282127487538
+Nomor Developer : wa.me/627753812675
 Nomor Owner Bot : wa.me/${nomorown}`
 
 // yang hapus nomor developer mudah-mudahan banyak crash
@@ -125,7 +125,7 @@ const listMessage = {
   text: tiktok,
   footer: botdate,
   title: wm,
-  buttonText: "Click Here!",
+  buttonText: "Pilih Menu ⎙",
   sections
 }
 await conn.sendMessage(m.chat, listMessage, { quoted: fakes, mentions: await conn.parseMention(tiktok), contextInfo:{ forwardingScore: 99999, isForwarded: true }})
