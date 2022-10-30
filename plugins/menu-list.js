@@ -377,7 +377,7 @@ const listMessage = {
   footer: `📮 *Note:* Jika menemukan bug, error atau kesulitan dalam penggunaan silahkan laporkan/tanyakan kepada Owner\n\nᴍᴀᴅᴇ ᴡɪᴛʜ ❤ ʙʏ ${nameown}\n\n${botdate}\n\n${wm2}`,
   mentions: await conn.parseMention(tek),
   title: ``,
-  buttonText: `CLICK HERE ⎙`, 
+  buttonText: `Pilih Menu ⎙`, 
   sections
 }
   if (teks == '404') {
@@ -631,7 +631,7 @@ const listMessage = {
                 {
                     urlButton: {
                         displayText: `${namebot}`,
-                        url: 'https://github.com/WH-MODS-BOT/'
+                        url: 'https://github.com/RullDev/'
                     }
                 },
                 {
@@ -710,8 +710,8 @@ handler.help = ['listmenu', 'menulist']
 
 handler.command = /^(listmenu|menulist|\?)$/i
 
-handler.register = false
-handler.exp = 3
+handler.register = true
+handler.exp = 15
 
 export default handler
 
@@ -743,16 +743,16 @@ function ucapan() {
   const time = moment.tz('Asia/Jakarta').format('HH')
   let res = "Kok Belum Tidur Kak? 🥱"
   if (time >= 4) {
-    res = "Pagi Lord 🌄"
+    res = "Pagi Kak 🌄"
   }
   if (time >= 10) {
-    res = "Siang Lord ☀️"
+    res = "Siang Kak ☀️"
   }
   if (time >= 15) {
-    res = "Sore Lord 🌇"
+    res = "Sore Kak 🌇"
   }
   if (time >= 18) {
-    res = "Malam Lord 🌙"
+    res = "Malam Kak 🌙"
   }
   return res
 }
