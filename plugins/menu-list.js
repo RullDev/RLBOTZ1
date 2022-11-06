@@ -25,8 +25,8 @@ ${emot}│☂︎ *Xp:* %exp / %maxexp
 ┠─────═[ TODAY ]═─────⋆
 │╭────────────────···
 ┴│    *${ucapan()} %name!*
-${emot}│☂︎ *Tanggal:* %week %weton
-${emot}│☂︎ *Date:* %date
+${emot}│☂︎ *Hari:* %week %weton
+${emot}│☂︎ *Tanggal:* %date
 ${emot}│☂︎ *Tanggal Islam:* %dateIslamic
 ┬│☂︎ *Waktu:* %time
 │╰────────────────···
@@ -325,7 +325,7 @@ const sections = [
         },
 ]
 
-let tek = `✧────···[ Dashboard ]···────✧
+let tek = `✧────···[ 𝐃𝐚𝐬𝐡𝐛𝐨𝐚𝐫𝐝 ]···────✧
 *${ucapan()} ${conn.getName(m.sender)}*
 ╭━━━━━━━━━━━━━━━━┈─✧
 ┴
@@ -357,6 +357,7 @@ let tek = `✧────···[ Dashboard ]···────✧
 │${emot} *${Object.keys(global.db.data.users).length}* Pengguna
 │${emot} *${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length}* Chat Terbanned
 │${emot} *${Object.entries(global.db.data.users).filter(user => user[1].banned).length}* Pengguna Terbanned
+│*Versi BOT:* ~MultiDevice V4 Tested~
 │
 ├━━━━━━━━━━━━━━━━┈─⋆
 │
